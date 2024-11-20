@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Hide Canvas Survey",
+    "version": "1.0",
+    "description": "Hides Canvas survey popup",
+    "permissions": ["scripting"],
+    "host_permissions": ["https://stavanger.instructure.com/*"],
+    "content_scripts": [
+      {
+        "matches": ["https://stavanger.instructure.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
